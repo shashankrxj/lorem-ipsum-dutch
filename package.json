@@ -1,16 +1,30 @@
 {
   "name": "lorem-ipsum-dutch",
-  "version": "1.0.7",
-  "description": "npm package for text-filler",
-  "main": "loremIpsum",
+  "version": "2.0.0",
+  "description": "A lightweight Dutch-only lorem ipsum text generator",
+  "main": "loremIpsum.js",
+  "exports": {
+    ".": {
+      "require": "./loremIpsum.js"
+    }
+  },
   "files": [
     "loremIpsum.js",
-    "corpus.txt"
+    "corpus.txt",
+    "README.md",
+    "LICENSE"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --test"
   },
-  "author": "",
-  "license": "ISC",
-  "keywords": []
+  "engines": {
+    "node": ">=18"
+  },
+  "author": "Shashank Raj",
+  "license": "MIT",
+  "keywords": [
+    "lorem-ipsum",
+    "dutch",
+    "text-generator"
+  ]
 }
